@@ -1,0 +1,380 @@
+:root {
+  --body-text: #434749;
+  --primary-blue: #00235d;
+  --yellow: #f8c506;
+  --light-blue: #00ade4;
+  --orange: #f6921e;
+  --dark-pink: #d91b5e;
+  --green: #3eac48;
+  --sky-blue: #00b0b8;
+  --red: #d1222a;
+  --pink: #f399c0;
+}
+
+/************************************
+* BASE
+************************************/
+
+* {
+  font-family: open sans,sans-serif;
+}
+body {
+  color: var(--body-text);
+  line-height: 1.6em;
+  overflow-x: hidden;
+}
+a, h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/************************************
+* LAYOUT
+************************************/
+
+/* custom container for layout */
+.main-container {
+  min-width: 74%;
+  max-width: 1230px;
+  padding-top: .6em;
+}
+/* main/middle content */
+.middle-section {
+  padding: 90px 0;
+}
+
+/************************************
+* COMPONENTS
+************************************/
+
+/* color bar */
+.color-bar {
+  position: relative;
+}
+.color-bar ul li, .color-bar ul {
+  height: 6px;
+}
+.color-bar ul {
+list-style: none;
+padding: 10px 0 0 0;
+margin: 0;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+}
+/* color bar colors */
+.color-bar ul .orange {
+  background: var(--orange);
+}
+.color-bar ul .dark-pink {
+  background: var(--dark-pink);
+}
+.color-bar ul .green {
+  background: var(--green);
+}
+.color-bar ul .sky-blue {
+  background: var(--sky-blue);
+}
+.color-bar ul .red {
+  background: var(--red);
+}
+.color-bar ul .pink {
+  background: var(--pink);
+}
+.color-bar ul .yellow {
+  background: var(--yellow);
+}
+/* age selection content  */
+.center-content {
+  width: 85%;
+  background-color: #f1f9fd;
+  padding: 65px 80px 60px 80px;
+  margin-top: 120px;
+  position: relative;
+}
+/* age selection row for internal pages (not home) */
+.center-content-internal {
+  margin-top: 40px;
+}
+/* Age Group Language/Healthy Lifestyle Toolkit */
+.heading-banner {
+  background-color: var(--primary-blue);
+  position: absolute;
+  top: -50px;
+  left: -38px;
+  font-size: 40px;
+  padding: 30px 40px;
+}
+/* age selection background colors */
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-skyblue {
+  background-color: var(--light-blue);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.bg-pink {
+  background-color: var(--pink);
+}
+.bg-green {
+  background-color: var(--green);
+}
+/* age selection and custom card */
+.jh-card {
+  width: 75%;
+  background-color: #fff;
+  border-radius: unset;
+}
+.jh-card-age, .jh-card-body {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.jh-card-age {
+  color: #333;
+  min-height: 154px;
+  min-height: 180px;
+}
+.jh-card-age p {
+  line-height: 25px;
+}
+.jh-card a, .jh-card-body-internal, .jh-card-toggle {
+  color: var(--light-blue);
+}
+.jh-card a, .jh-card-body, .jh-card-body-internal {
+  font-size: 20px;
+}
+.jh-card-age-group {
+  border-width: 4px;
+  border-style: solid;
+}
+.jh-card-internal {
+  border: 2px solid var(--light-blue);
+}
+.jh-card-internal-content {
+  border: 2px solid var(--light-blue);
+  border-top: unset;
+}
+.jh-card-internal img {
+  max-width: 120px;
+}
+.jh-card-toggle {
+  font-weight: 600;
+  cursor: pointer;
+}
+.jh-card-body-content {
+  border: unset;
+}
+/* age selection colored boxes at bottom of pages */
+.age-selection-bottom {
+  width: 75%;
+}
+.age-selection-bottom, .age-selection-bottom h3 {
+  color: #333;
+}
+.age-selection-bottom .col-lg {
+  padding: 50px 20px !important;
+}
+/* make age selection colored boxes at bottom of page clickable */
+.age-selection-bottom a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* custom title - Pillars to a Healthy Lifestyle/Download the Healthy Lifestyle Toolkit */
+.jh-title {
+  font-size: 40px;
+}
+/* custom button */
+.jh-btn {
+  color: #fff;
+  background-color: var(--primary-blue)
+}
+.jh-btn:hover {
+  color: #fff;
+}
+
+/************************************
+* HEADER
+************************************/
+
+/* navbar icon stroke color = rgba(248, 197, 6, 1) and stroke width = 3 */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 197, 6, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+/* navbar button */
+.navbar-light .navbar-toggler {
+  border: 4px solid var(--yellow);
+  padding: 4px;
+}
+
+/************************************
+* HOME
+************************************/
+
+.home-hero img {
+  max-width: 100%;
+}
+/* home section below hero */
+.hero-bottom-container {
+  background: #efefef;
+  padding-bottom: .6em;
+  border-bottom: 1px solid #ddd;
+}
+.hero-bottom-container a {
+  margin-left: 20px;
+  padding-left: 22px;
+  border-left: 2px solid #aaa;
+}
+.hero-bottom-container .fa-home {
+  color: #777;
+}
+/* colored squares under Pillars to a Healthy Lifestyle */
+.col-squares {
+  position: relative;
+  max-height: 300px;
+}
+.square-pink, .square-yellow, .square-blue {
+  position: absolute;
+}
+.square-pink {
+  width: 150px;
+  height: 150px;
+  background: var(--dark-pink);
+  top: 0;
+  right: 0;
+}
+.square-yellow {
+  width: 80px;
+  height: 80px;
+  border: 4px solid var(--yellow);
+  bottom: 132px;
+  right: 135px;
+}
+.square-blue {
+  width: 45px;
+  height: 45px;
+  background: var(--light-blue);
+  bottom: 184px;
+  right: 190px;
+}
+
+/************************************
+* FOOTER
+************************************/
+
+footer {
+  color: #fff;
+  background-color: var(--primary-blue);
+}
+footer .main-container {
+  padding-bottom: .6em;
+}
+footer .row {
+  padding-top: 60px;
+}
+footer .color-bar ul {
+  padding-top: 0;
+}
+.footer-logo {
+  max-width: 45%;
+  filter: brightness(0) invert(1);
+  padding-right: 50px;
+}
+.footer-logo-col div {
+  overflow: hidden;
+}
+footer .col-sm {
+  padding-top: 50px;
+}
+footer p {
+  margin-bottom: 8px;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+/* footer social icons */
+footer .fab {
+  font-size: 25px;
+}
+footer .fab + .fab {
+  margin-left: 10px;
+}
+.footer-bottom {
+  background-color: #1f2c5f;
+  font-size: 14px;
+  margin-top: 90px;
+}
+
+/************************************
+* MEDIA QUERIES
+************************************/
+
+@media (max-width: 990px) {
+  .middle-section {
+    padding: 60px 0;
+  }
+  .col-squares {
+    display: none;
+  }
+  .jh-title {
+    margin: 0 !important;
+  }
+  .center-content {
+    width: 100%;
+  }
+  /* override Bootstrap flex class in cards for mobile */
+  .jh-card-body.align-items-end, .jh-card-body.align-items-start {
+    align-items: center !important;
+  }
+  /* override Bootstrap padding class in cards for mobile */
+  .jh-card-body.p-5 {
+    padding: 20px !important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .navbar-brand img {
+    max-width: 85%;
+  }
+  .jh-title {
+    font-size: 30px;
+  }
+  .hero-bottom-container a {
+    font-size: 13px;
+  }
+  .center-content {
+    padding: 65px 15px 60px 15px;
+  }
+  .heading-banner {
+    font-size: 20px;
+  }
+  .jh-card, .age-selection-bottom {
+    width: 100%;
+  }
+  footer .text-right {
+    text-align: left !important;
+  }
+  footer .float-left {
+    float: none !important;
+  }
+  footer .footer-logo-col, footer .footer-logo {
+    margin-bottom: 40px;
+  }
+  footer .footer-logo {
+    min-width: 260px;
+  }
+}
