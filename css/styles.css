@@ -16,11 +16,13 @@
 ************************************/
 
 * {
-  font-family: open sans,sans-serif;
+  font-family: gill-sans-nova, sans-serif;
 }
 body {
   color: var(--body-text);
   line-height: 1.6em;
+  font-size: 17px;
+  font-weight: 500;
   overflow-x: hidden;
 }
 a, h1, h2, h3, h4, h5, h6 {
@@ -29,6 +31,9 @@ a, h1, h2, h3, h4, h5, h6 {
 }
 a:hover {
   text-decoration: none;
+}
+strong {
+  color: #000;
 }
 
 /************************************
@@ -118,7 +123,7 @@ grid-template-columns: repeat(8, 1fr);
   background-color: var(--orange);
 }
 .bg-pink {
-  background-color: var(--pink);
+  background-color: var(--dark-pink);
 }
 .bg-green {
   background-color: var(--green);
@@ -190,6 +195,40 @@ grid-template-columns: repeat(8, 1fr);
 /* custom title - Pillars to a Healthy Lifestyle/Download the Healthy Lifestyle Toolkit */
 .jh-title {
   font-size: 40px;
+}
+/* custom card col */
+.jh-collapse-row {
+  color: #000;
+}
+.jh-collapse-row .col-lg {
+  border: 1px solid;
+}
+.jh-collapse-row .col-lg:nth-child(1) {
+  border-right: unset;
+}
+.jh-collapse-row p:nth-child(1) {
+  background-color: var(--light-blue);
+}
+/* custom number list */
+.jh-num-list {
+  list-style: none;
+  counter-reset: li
+}
+.jh-num-list li::before {
+  content: counter(li) ".";
+  color: var(--light-blue);
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+.jh-num-list li {
+  counter-increment: li
+}
+.assessment-row h6 {
+  font-size: 20px;
+}
+.assessment-row a {
+  color: var(--light-blue);
 }
 /* custom button */
 .jh-btn {
@@ -339,6 +378,10 @@ footer .fab + .fab {
   /* override Bootstrap padding class in cards for mobile */
   .jh-card-body.p-5 {
     padding: 20px !important;
+  }
+  .jh-collapse-row .col-lg {
+    margin: 0 !important;
+    border: unset;
   }
 }
 @media (max-width: 767px) {
