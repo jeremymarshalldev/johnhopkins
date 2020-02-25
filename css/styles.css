@@ -159,6 +159,9 @@ grid-template-columns: repeat(8, 1fr);
   border-width: 4px;
   border-style: solid;
 }
+.jh-card-age-group p {
+  color: var(--primary-blue);
+}
 .jh-card-internal {
   border: 2px solid var(--light-blue);
 }
@@ -205,6 +208,10 @@ grid-template-columns: repeat(8, 1fr);
 }
 .jh-collapse-row .col-lg:nth-child(1) {
   border-right: unset;
+}
+/* over ride bootstrap border-right class inside dropdowns */
+.jh-collapse-row .border-right {
+  border-color: #000 !important;
 }
 .jh-collapse-row p:nth-child(1) {
   background-color: var(--light-blue);
@@ -266,10 +273,13 @@ grid-template-columns: repeat(8, 1fr);
   padding-bottom: .6em;
   border-bottom: 1px solid #ddd;
 }
-.hero-bottom-container a {
+.hero-bottom-container span {
   margin-left: 20px;
   padding-left: 22px;
   border-left: 2px solid #aaa;
+}
+.hero-bottom-container span {
+  color: var(--primary-blue);
 }
 .hero-bottom-container .fa-home {
   color: #777;
@@ -382,6 +392,9 @@ footer .fab + .fab {
   .jh-collapse-row .col-lg {
     margin: 0 !important;
     border: unset;
+  }
+  .jh-collapse-row .border-right {
+    border: unset !important;
   }
 }
 @media (max-width: 767px) {
