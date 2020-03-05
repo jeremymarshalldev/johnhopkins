@@ -270,6 +270,10 @@ grid-template-columns: repeat(8, 1fr);
 * HOME
 ************************************/
 
+.home-hero {
+  max-height: 600px;
+  overflow: hidden;
+}
 .home-hero img {
   max-width: 100%;
 }
