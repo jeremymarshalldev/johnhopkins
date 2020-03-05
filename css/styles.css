@@ -179,6 +179,12 @@ grid-template-columns: repeat(8, 1fr);
 .jh-card-body-content {
   border: unset;
 }
+.jh-card .card-links {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+}
 /* age selection colored boxes at bottom of pages */
 .age-selection-bottom {
   width: 75%;
