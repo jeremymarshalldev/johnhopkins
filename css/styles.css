@@ -269,6 +269,7 @@ grid-template-columns: repeat(8, 1fr);
 .navbar-nav {
   justify-content: center;
   flex-direction: row;
+  margin-top: 20px;
 }
 .navbar-nav  li + li {
   margin-left: 20px; 
